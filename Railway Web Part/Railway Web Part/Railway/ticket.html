@@ -1,0 +1,197 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+<link rel="stylesheet" type="text/css" href="foopicker-master/css/foopicker.css">
+<script type="text/javascript">
+function swap_content()
+{
+var a= document.getElementById("source_id");
+var b= document.getElementById("destination_id");
+var s=a.value;
+var t=b.value;
+a.value=t;
+b.value=s;
+}
+</script>
+<script type="text/javascript" src="foopicker-master/foopicker.js"></script>
+<style>
+.mybutton
+{
+  background:url("exchange.png") no-repeat;
+  cursor: pointer;
+  border: none;
+  width: 100px;
+  height: 100px;
+
+}
+h1 {
+margin: 0;
+padding: 0;
+font-weight: bold;
+font-size: 22px;
+color: #32324e;
+text-align:center;
+margin-bottom: 2%;
+font-family: Courgette;
+}
+.photoo{
+margin-left: 50px;
+}
+body{
+margin: 0;
+padding: 0;
+background-image: url("full.png");
+font-family: Poppins;
+-webkit-background-size: cover;
+background-size auto auto;
+background-repeat: no-repeat;
+height: 136vh;
+}
+.wrapper{
+width: 400px;
+height: 650px;
+color: #A9A9A9;
+top: 75%;
+left: 82%;
+padding: 30px 30px;
+margin-bottom: 30px;
+position: absolute;
+transform: translate(-50%,-50%);
+box-sizing: border-box;
+box-shadow: 50px 50px 50px 50px #000;
+background-color: #f2f2f2;
+}
+::placeholder{
+color:#8383af;
+opacity: 1;
+}
+
+.wrapper input[type=text], .wrapper input[type=password], .wrapper input[type=email], .wrapper input[type=tel] {
+border: none;
+border-bottom: 1px solid #ddd;
+background: transparent;
+outline: none;
+height: 30px;
+font-size: 16px;
+opacity: 1;
+color: #8383af;
+width: 100%;
+margin-bottom: 5px;
+}
+.wrapper input[type=submit]{
+border:none;
+outline:none;
+height: 40px;
+background:#ffae42;
+color: #FFFFBF;
+font-size:16px;
+font-weight: bold;
+width: 100%;
+margin-bottom: 20px;
+}
+
+
+.wrapper input[type=submit]:hover{
+cursor: pointer;
+color: black;
+background-color: orange;
+}
+
+.container{
+border-radius: 5px;
+background-color: #FFD199;
+padding: 2% 2%;
+width: 30%;
+height: 106%;
+box-shadow: 8px 8px 8px;
+font-family: Arial;
+}
+.rcorners1{
+  width:100%;
+padding:4px 20px;
+border: 1px solid #ccc;
+border-radius: 8px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 16px;
+
+}
+.wrapper .teepdo{
+position: relative;
+left: 41%;
+vertical-align: middle;
+height:6%;
+width:12%;
+border:none;
+background-image: url("exchange.png")
+color:#f2f2f2;
+
+}
+.wrapper .teepdo1{
+position: relative;
+left: 41%;
+vertical-align: middle;
+height:20%;
+width:20%;
+border:none;
+color:#f2f2f2;
+
+}
+
+
+  
+
+
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+<h1 align="center"><font size="10"><b>Book Ticket</b></font></h1>
+<hr>
+<form action="">
+
+ <br><br><input type= "text" name="source_id" id="source_id" placeholder="Source"><br><br>
+ <button type="button" style="font-size:24px" class="teepdo" onclick="swap_content()" ><i class="fa fa-refresh"></i></button>
+ <input type= "text" name="destination_id" id="destination_id" placeholder="Destination"><br><br><br><br>
+    
+    
+    <input type="text" id="datepicker" value="Date"/>
+
+
+  <script type="text/javascript">
+    var foopicker = new FooPicker({
+      id: 'datepicker',
+      dateFormat: 'dd/MM/yyyy',
+      disable: ['29/07/2017', '30/07/2017', '31/07/2017', '01/08/2017']
+    });
+  </script>
+<br><br><br><br>
+
+
+
+
+<select name="s1" class="rcorners1" style= 'color:#8383af'>
+<option value="class0" style= 'color:#8383af'>All Classes</option>
+<option value="class1" style= 'color:#8383af'>Anubhuti Class(EA)</option>
+<option value="class2" style= 'color:#8383af'>AC First Class(1A)</option>
+<option value="class3" style= 'color:#8383af'>Exec. Chair Car(EC)</option>
+<option value="class4" style= 'color:#8383af'>AC 2 Tier(2A)</option>
+<option value="class5" style= 'color:#8383af'>First Class(FC)</option>
+<option value="class6" style= 'color:#8383af'>AC 3 Tier(3A)</option>
+<option value="class7" style= 'color:#8383af'>AC Economy(3E)</option>
+<option value="class8" style= 'color:#8383af'>AC Chair Car(CC)</option>
+<option value="class9" style= 'color:#8383af'>Sleeper(SL)</option>
+<option value="class10" style= 'color:#8383af'>Second Sitting(2S)</option>
+</select><br><br><br>
+
+
+
+<input type="submit" value="Find Trains"><hr>
+</form>
+<img src="icons8.png" class="teepdo1">
+</div>
+</body>
+</html>

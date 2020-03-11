@@ -1,0 +1,28 @@
+.container p{
+    margin:2px auto;
+    background: #f9f9f9;
+    font-size: 15px;
+    padding: 5px;
+    max-width: 960px;
+    opacity: 1;
+    font-style: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container h1{
+    position: relative;
+    margin-left: 40%;
+}
+.parallax{
+    background-image:url('wallpaps2.png');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    width: auto;
+}
+.parallax1{
+    background-image:url('wallpaps3.png');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    width: auto;
+}
